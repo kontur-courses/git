@@ -1,0 +1,27 @@
+[merge]
+	tool = vscode
+[mergetool]
+	keepbackup = false
+[diff]
+	guitool = vscode
+[core]
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+[user]
+	name = digi
+	email = digi@skbkontur.ru
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[difftool "vscode"]
+	path = C:/Program Files/Microsoft VS Code/code.exe
+	cmd = \"C:/Program Files/Microsoft VS Code/code.exe\" --wait --diff \"$LOCAL\" \"$REMOTE\"
+[mergetool "vscode"]
+	path = C:/Program Files/Microsoft VS Code/code.exe
+	cmd = "\"C:/Program Files/Microsoft VS Code/code.exe\" --wait \"$MERGED\" "
