@@ -7,8 +7,8 @@
 [core]
 	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
 [user]
-	name = digi
-	email = digi@skbkontur.ru
+	name = yourname
+	email = yourname@site.com
 [pull]
 	rebase = false
 [fetch]
@@ -25,3 +25,13 @@
 [mergetool "vscode"]
 	path = C:/Program Files/Microsoft VS Code/code.exe
 	cmd = "\"C:/Program Files/Microsoft VS Code/code.exe\" --wait \"$MERGED\" "
+[alias]
+	x = !start GitExtensions.exe
+    ci = !start GitExtensions.exe commit
+    st = status -sb
+    graph = log --oneline --graph --all
+    co = checkout
+    pushup = push -u origin HEAD
+    puff = pull --ff-only
+    pure = pull --rebase
+    undo = reset --hard HEAD~1

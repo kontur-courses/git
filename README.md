@@ -18,15 +18,17 @@
 
 ## Самостоятельная подготовка
 
-* Заведи аккаунт на [GitHub.com](https://github.com/join)
-* Установи [Git](https://git-scm.com/downloads) с настройками по умолчанию
-* Установи [Git Extensions](https://sourceforge.net/projects/gitextensions/) с настройками по умолчанию
-* Установи [Visual Studio Code](https://code.visualstudio.com/Download)
+Заведи аккаунт на [GitHub.com](https://github.com/join)
+
+Для прохождения блока потребуется ОС Windows, на которую надо установить:
+* [Git](https://git-scm.com/downloads) с настройками по умолчанию
+* [Git Extensions](https://sourceforge.net/projects/gitextensions/) с настройками по умолчанию
+* [Visual Studio Code](https://code.visualstudio.com/Download)
 
 
 ## Очная встреча
 
-~ 4 часа
+~ 4.5 часа
 
 
 ## Закрепление материала
