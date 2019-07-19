@@ -22,7 +22,7 @@
 
 Для прохождения блока потребуется ОС Windows, на которую надо установить:
 * [Git](https://git-scm.com/downloads) с настройками по умолчанию
-* Git Extensions](https://sourceforge.net/projects/gitextensions/) с настройками по умолчанию
+* [Git Extensions](https://sourceforge.net/projects/gitextensions/) с настройками по умолчанию
 * [Visual Studio Code](https://code.visualstudio.com/Download)
 
 
