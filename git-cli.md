@@ -277,7 +277,7 @@
     Открой вкладку Source Control в VS Code
     Несмотря на то, что файлы были созданы в разных ветках, Git видит,
     что первые строчки совпадают и по ним конфликта нет. А вот оставшиеся строчки конфликтуют.
-    Так как в ветке `rebase-feature` был правильный текст, нажми `Accept Incoming Change`. Добавь `rebase.md` в Commit Index и выполни команду `git rebase --continue`.
+    Так как в ветке `rebase-feature` был правильный текст, нажми `Accept Incoming Change`. Добавь `reflog.md` в Commit Index и выполни команду `git rebase --continue`.
     Раз оба коммита были успешно скопированы, rebase на этом будет закончен.
 
 13. Обрати внимание, что в результате rebase были созданы коммиты `Add rebase.md` и `Add reflog.md`.
