@@ -22,18 +22,24 @@
 
 Есть два варианта выполнения очного занятия. Нужно заранее выбрать подходящий и подготовить свой компьютер.
 
-Первый вариант потребует ОС Windows с установленными Git Bash, Git Extensions и Visual Studio Code.  
-В этом случае задания будут выполняться в графическом интерфейсе Git Extensions.  
-Если хочешь пройти этот вариант, то [выполни эти шаги подготовки](https://github.com/kontur-courses/git/blob/master/git-install-ext.md).
-
-Второй вариант подходит для Linux, Mac и Windows. Потребуется установить Git Bash и Visual Studio Code.  
+Первый вариант подходит для Linux, Mac и Windows. Потребуется установить Git Bash и Visual Studio Code.  
 В этом случае задания будут выполняться в Visual Studio Code и терминале.  
 Если хочешь пройти этот вариант, то [выполни эти шаги подготовки](https://github.com/kontur-courses/git/blob/master/git-install-cli.md).
+
+Второй вариант потребует ОС Windows с установленными Git Bash, Git Extensions и Visual Studio Code.  
+В этом случае задания будут выполняться в графическом интерфейсе Git Extensions.  
+Если хочешь пройти этот вариант, то [выполни эти шаги подготовки](https://github.com/kontur-courses/git/blob/master/git-install-ext.md).
 
 
 ## Очная встреча
 
-~ 4.5 часа
+~ 4.5 часа  
+
+[Презентация](https://docs.google.com/presentation/d/1B5njNPGdQxvaXYOWG_hyaCXxyp6RtWYllMVSHACmdgM/edit?usp=sharing)  
+
+[Первый вариант задания для Git Bash и Visual Studio Code](https://github.com/kontur-courses/git/blob/master/git-cli.md)  
+
+[Второй вариант задания для Git Extensions и Visual Studio Code](https://github.com/kontur-courses/git/blob/master/git-ext.md)  
 
 
 ## Закрепление материала

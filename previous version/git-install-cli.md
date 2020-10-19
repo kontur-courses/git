@@ -19,26 +19,18 @@ brew install git
 
 Нужно ввести следующие команды в терминале (для Windows — в Git Bash, CMD или PowerShell)
 
-1. Настройка имени и почты пользователя. Эта информация будет прикрепляться к каждому коммиту
-   ```bash
-   git config --global user.name "YOUR_NAME"
-   git config --global user.email "your@email.com"
-   ```
+```bash
+# Настройка имени и почты пользователя. Эта информация будет прикрепляться к каждому коммиту
+git config --global user.name "YOUR_NAME"
+git config --global user.email "your@email.com"
 
-2. Настройка переносов строки.
+# Настройка переносов строки. Только для Windows
+git config --global core.autocrlf true
 
-   Для Windows:
-   ```bash
-   git config --global core.autocrlf true
-   git config --global core.safecrlf true
-   ```
-   
-   Для Linux и macOS:
-   ```bash
-   git config --global core.autocrlf input
-   ```
-   
-   _Подробнее про символы переноса строк и зачем их конфигурировать можно прочитать [тут](https://htmlacademy.ru/blog/boost/tools/konec-stroki)_
+# Настройка переносов строки. Только для Linux/Mac
+git config --global core.autocrlf input
+```
+
 
 ## VS Code
 
