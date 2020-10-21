@@ -47,10 +47,11 @@ brew install git
 1. VS Code можно взять здесь <https://code.visualstudio.com/Download>  
 *Для Windows: в инсталляторе прожать все галочки в Other*
 2. Git Graph - <https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph> (или найти в каталоге расширений в самом VS Code)
+3. После установки Git Graph не забудь перезапустить VS Code
 
 ### Настройка
 
-1. (Опционально) Включи автосохранение в VS Code - больше не придется нажимать `Ctrl/Cmd + S` после каждого изменения. Ставим галочку `Auto Save` в меню  `File`
+1. (Опционально) Включи автосохранение в VS Code — больше не придется нажимать `Ctrl/Cmd + S` после каждого изменения. Ставим галочку `Auto Save` в меню  `File`
 
 2. Настрой VS Code как редактор по умолчанию для гита:
 
@@ -96,4 +97,3 @@ brew install git
    В поле "Title" можно написать что угодно, это просто название ssh-ключа.
    
    После этого нажми `Add SSH key` и ключ будет добавлен
-   
