@@ -136,7 +136,7 @@
 4. `git branch -av` — вывести список локальных и удаленных веток
 5. `git branch <branchname>` — создать ветку
 6. `git branch -d <branchname>` — удалить ветку
-7. `git checkout <commit>` или `git switch --detach <commit>` — переместить HEAD на коммит, причем получится detached HEAD
+7. `git checkout <commit>` или `git switch --detach <commit|branch>` — переместить HEAD на коммит, причем получится detached HEAD
 8. `git checkout <branch>`или `git switch <branch>` — переместить HEAD на ветку
 9. `git checkout -b <new_branch>` или `git switch -c <new_branch>` — создать ветку и перейти на нее
 10. `git reset --hard <commit>` — переместить HEAD и текущую ветку на `<commit>`
@@ -517,8 +517,9 @@ Git Extensions предложить создать связанную локал
 - `git push` = `git push origin HEAD` — добавить изменения из текущей локальной ветки и переместить соответствующую ветку удаленного репозитория
 - `git push -f` — выполнить `push`, даже если удаленная ветка уже не является предком
 - `git push --force-with-lease` — выполнить `push`, если является предком или удаленная ветка не сдвигалась (использовать вместо предыдущей команды)
-- `git push <remote> -d <branch>` — удалить ветку в удаленном репозитории
+- `git push <remote> -d <branch|tag>` — удалить ветку или тег в удаленном репозитории
 - `git push <remote> tag <tag>` — отправить тег в удаленный репозиторий
+- `git push <remote> --tags` — отправить все локальные теги в удаленный репозиторий
 - `git push --mirror` — выполнить агрессивный `push` для всех тегов, веток и HEAD, подходит для создания удаленной копии локального репозитория
 ```
 
