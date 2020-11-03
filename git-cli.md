@@ -143,7 +143,7 @@
 1. С помощью VS Code создай новый файл `branch.md` со следующим содержимым:
 ```
 ## S3. Манипуляции через ссылки, нет ссылки — в мусор
-#### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся ссылка
+#### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся за HEAD ссылка
 #### checkout — перемещение на ветку или коммит, reset — перемещение с веткой на коммит
 #### Видно то, на что есть ссылки, остальное — мусор
 1. `git tag` — вывести список тегов
@@ -152,9 +152,9 @@
 4. `git branch -av` — вывести список локальных и удаленных веток
 5. `git branch <branchname>` — создать ветку
 6. `git branch -d <branchname>` — удалить ветку
-7. `git checkout <commit>` — переместить HEAD на коммит (получится detached HEAD)
-8. `git checkout <branch>` — переместить HEAD на ветку
-9. `git checkout -b <new_branch>` — создать новую ветку и перейти на нее
+7. `git checkout <commit>` или `git switch --detach <commit>` — переместить HEAD на коммит, причем получится detached HEAD
+8. `git checkout <branch>`или `git switch <branch>` — переместить HEAD на ветку
+9. `git checkout -b <new_branch>` или `git switch -c <new_branch>` — создать ветку и перейти на нее
 10. `git reset --hard <commit>` — переместить HEAD и текущую ветку на `<commit>`
 ```
 
@@ -331,7 +331,7 @@
 
 2. Создай файл `rebase.md` со следующим содержимым:
 ```
-## A2. rebase и cherry-pick, чтобы пересоздать неизменяемую историю
+## A2. rebase, cherry-pick и amend, чтобы пересоздать историю
 #### Нельзя переписать историю — можно создать новую
 - `git commit --amend --no-edit` — заменить последний коммит ветки на отредактированный с дополнительными изменениями без изменения сообщения
 - `git rebase <upstream>` — применить все коммиты от общего родителя до текущего к `<upstream>`
@@ -346,7 +346,7 @@
 4. Замени содержимое `branch.md` на следующее:
 ```
 ## S3. Манипуляции через ссылки, нет ссылки — в мусор
-#### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся ссылка
+#### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся за HEAD ссылка
 #### checkout — перемещение на ветку или коммит, reset — перемещение с веткой на коммит
 #### Видно то, на что есть ссылки, остальное — мусор
 - `git tag` — вывести список тегов
@@ -355,9 +355,9 @@
 - `git branch -av` — вывести список локальных и удаленных веток
 - `git branch <branchname>` — создать ветку
 - `git branch -d <branchname>` — удалить ветку
-- `git checkout <commit>` — переместить HEAD на коммит (получится detached HEAD)
-- `git checkout <branch>` — переместить HEAD на ветку
-- `git checkout -b <new_branch>` — создать новую ветку и перейти на нее
+- `git checkout <commit>` или `git switch --detach <commit>` — переместить HEAD на коммит, причем получится detached HEAD
+- `git checkout <branch>`или `git switch <branch>` — переместить HEAD на ветку
+- `git checkout -b <new_branch>` или `git switch -c <new_branch>` — создать ветку и перейти на нее
 - `git reset --hard <commit>` — переместить HEAD и текущую ветку на `<commit>`
 - `git reflog show <ref>` — показать лог действий со ссылкой
 - `git reflog` = `git reflog show HEAD` — показать лог действий с HEAD
@@ -371,7 +371,7 @@
 7. Замени содержимое `branch.md` на следующее:
 ```
 ## S3. Манипуляции через ссылки, нет ссылки — в мусор
-#### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся ссылка
+#### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся за HEAD ссылка
 #### checkout — перемещение на ветку или коммит, reset — перемещение с веткой на коммит
 #### Видно то, на что есть ссылки, остальное — мусор
 - `git tag` — вывести список тегов
@@ -380,9 +380,9 @@
 - `git branch -av` — вывести список локальных и удаленных веток
 - `git branch <branchname>` — создать ветку
 - `git branch -d <branchname>` — удалить ветку
-- `git checkout <commit>` — переместить HEAD на коммит (получится detached HEAD)
-- `git checkout <branch>` — переместить HEAD на ветку
-- `git checkout -b <new_branch>` — создать новую ветку и перейти на нее
+- `git checkout <commit>` или `git switch --detach <commit>` — переместить HEAD на коммит, причем получится detached HEAD
+- `git checkout <branch>`или `git switch <branch>` — переместить HEAD на ветку
+- `git checkout -b <new_branch>` или `git switch -c <new_branch>` — создать ветку и перейти на нее
 - `git reset --hard <commit>` — переместить HEAD и текущую ветку на `<commit>`
 ### Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ```
