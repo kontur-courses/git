@@ -34,6 +34,12 @@
 
 3. Открой папку `git-rules` в VS Code (`File / Open Folder` в главном меню)
 
+4. Открой репозиторий с помощью контекстного меню Проводника. Убедись, что в нем есть коммит с названием `Initial commit`.
+
+
+*История коммитов должна выглядеть так:*  
+<img src="https://raw.githubusercontent.com/kontur-courses/git/master/images/ext-steps/02-finish.png">
+
 
 ## Задание 3. Commits
 
@@ -44,8 +50,6 @@
 1. `git init` — создать пустой репозиторий
 2. `git clone <url>` — склонировать репозиторий в новую директорию
 ```
-
-2. Открой репозиторий, убедись, что в нем есть коммит с названием `Initial commit`.
 
 3. Нажми кнопку `Commit`, чтобы открыть окно коммита
 
@@ -404,7 +408,7 @@ Git Extensions автоматически сделает checkout на нее.
 1. Удали тег `old-rebase-feature`. Коммит, на который он ссылался будет скрыт, но продолжит существовать в репозитории.
 
 *Теперь история коммитов должна выглядеть так:*  
-<img src="https://raw.githubusercontent.com/kontur-courses/git/master/images/ext-steps/10-before.png">
+<img src="https://raw.githubusercontent.com/kontur-courses/git/master/images/ext-steps/10-continue.png">
 
 2. Выбери пункт главного меню `Commands / Show reflog`.
 В результате ты увидишь список коммитов, по которым передвигался `HEAD`.
@@ -526,7 +530,10 @@ Git Extensions предложить создать связанную локал
 
 5. Добавь изменения в Commit Index и закоммить их с опцией `Amend Commit`, чтобы не создавать лишний коммит.
 
-6. Обрати внимание, что старый коммит остался видимым, ведь на него ссылается `origin/master`.
+6. Обрати внимание, что старый коммит остался видимым, ведь на него ссылается `origin/master`
+
+*Теперь история коммитов должна выглядеть так:*  
+<img src="https://raw.githubusercontent.com/kontur-courses/git/master/images/ext-steps/14-continue.png">
 
 7. Если сейчас выполнить push, то он завешится ошибкой, т.к. навозможно продвинуть `origin/master`
 вперед по истории так, чтобы он стал ссылаться на коммит, на который ссылается `master`.
