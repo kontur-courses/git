@@ -77,7 +77,7 @@ brew install git
 [Заведи аккаунт на GitHub](https://github.com/join)
 
 
-## SSH для GitHub (опционально)
+## SSH для GitHub
 
 1. Сгенерируй ssh-ключ. Для этого в терминале (на Windows исключительно в Git Bash) введи:
 
@@ -98,3 +98,21 @@ brew install git
    В поле "Title" можно написать что угодно, это просто название ssh-ключа.
    
    После этого нажми `Add SSH key` и ключ будет добавлен
+
+3. Также нужно, чтобы твой SSH-клиент доверял GitHub. При выполнении запроса к GitHub в терминале может появиться
+вопрос о доверии к GitHub и его «fingerprint» (отпечатку). В этом случае надо выбирать вариант «yes».
+Но проще не откладывать этот вопрос на будущее, а установить доверие уже сейчас.
+Для этого в терминале (на Windows исключительно в Git Bash) введи:
+
+   `ssh -T git@github.com`
+
+И если увидишь примерно такой текст:
+
+```
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+введи «yes», чтобы установить доверие.
