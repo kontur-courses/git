@@ -421,9 +421,6 @@ Git Extensions автоматически сделает checkout на нее.
 
 1. Удали тег `old-rebase-feature`. Коммит, на который он ссылался будет скрыт, но продолжит существовать в репозитории.
 
-*Теперь история коммитов должна выглядеть так:*  
-<img src="https://raw.githubusercontent.com/kontur-courses/git/master/images/ext-steps/10-continue.png">
-
 2. Выбери пункт главного меню `Commands / Show reflog`.
 В результате ты увидишь список коммитов, по которым передвигался `HEAD`.
 Найди в списке действие `commit: Change branch.md` и выполни `Copy SHA-1` из контекстного меню.
@@ -432,6 +429,9 @@ Git Extensions автоматически сделает checkout на нее.
 3. Используй пункт главного меню `Commands / Checkout revision`, чтобы перейти на коммит с ревизией из буфера обмена.
 
 4. Убедись, что скрытый коммит найден и снова виден. По крайней мере пока на него ссылается `HEAD`.
+
+*Теперь история коммитов должна выглядеть так:*  
+<img src="https://raw.githubusercontent.com/kontur-courses/git/master/images/ext-steps/10-continue.png">
 
 5. Перейди на `master`
 
