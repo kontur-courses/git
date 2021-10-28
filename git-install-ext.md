@@ -31,7 +31,6 @@ brew install git
    Для Windows:
    ```bash
    git config --global core.autocrlf true
-   git config --global core.safecrlf true
    ```
    
    Для Linux и macOS:
