@@ -51,8 +51,6 @@ brew install git
    ```bash
    git config --global core.editor nano
    ```
-   
-   *Подробнее про символы переноса строк и зачем их конфигурировать можно прочитать [тут](https://htmlacademy.ru/blog/boost/tools/konec-stroki)*
 
 
 ## VS Code 
