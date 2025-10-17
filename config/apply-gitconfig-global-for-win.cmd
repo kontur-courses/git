@@ -57,19 +57,47 @@ REM good config
 
 %GIT% config --global credential.helper manager
 
+
 REM aliases
-%GIT% config --global alias.it "!git init && git commit -m 'Initial commit' --allow-empty"
+%GIT% config --global alias.configure "config --global -e"
+
+%GIT% config --global alias.cleanup "clean -xdf"
+
+%GIT% config --global alias.cm "commit -m"
+%GIT% config --global alias.call "!git add --all && git commit"
+%GIT% config --global alias.calm "!git add --all && git commit -m"
+%GIT% config --global alias.amend "git commit --amend --no-edit"
+
 %GIT% config --global alias.st "status -sb"
-%GIT% config --global alias.call "!git add . && git commit -m"
-%GIT% config --global alias.commend "commit --amend --no-edit"
-%GIT% config --global alias.graph "log --oneline --decorate --graph --all"
-%GIT% config --global alias.to "checkout"
+
+%GIT% config --global alias.gr "log --graph"
+%GIT% config --global alias.gra "log --graph --all"
+%GIT% config --global alias.graph "log --graph --oneline --decorate --all"
+%GIT% config --global alias.grr "log --graph --all --reflog"
+
+%GIT% config --global alias.br "branch -vv --sort=-committerdate --list"
+
+%GIT% config --global alias.co "checkout"
+%GIT% config --global alias.cob "checkout -b"
+%GIT% config --global alias.sw "switch"
+%GIT% config --global alias.swc "switch -c"
+%GIT% config --global alias.back "checkout -"
+
+%GIT% config --global alias.undo "reset --soft HEAD^"
+%GIT% config --global alias.forget "reset --hard HEAD^"
+%GIT% config --global alias.restart "reset --hard @{u}"
+
+%GIT% config --global alias.merc "merge --no-ff"
+%GIT% config --global alias.ff "merge --ff-only FETCH_HEAD"
+
+%GIT% config --global alias.autorebase "rebase --autostash"
+%GIT% config --global alias.rr "rebase --autostash FETCH_HEAD"
+
 %GIT% config --global alias.pushup "push -u origin HEAD"
 %GIT% config --global alias.please "push --force-with-lease"
 %GIT% config --global alias.puff "pull --ff-only"
-%GIT% config --global alias.pure "pull --rebase --autostash"
 %GIT% config --global alias.purr "pull --rebase --autostash"
-%GIT% config --global alias.undo "reset --soft HEAD^"
+%GIT% config --global alias.sync "!git pull --rebase --autostash && git push"
 
 
 for /f %%i in ('git config --get user.email') do set GitUserEmail=%%i
